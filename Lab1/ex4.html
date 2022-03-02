@@ -8,13 +8,15 @@
 </head>
 <body>
     <div class="container-sm">
-    <form onsubmit="sayHi();">
+    <form onsubmit="sayHi(); return false;">
         <div class="mb-3">
         <fieldset>
             <p>
                 <label for="prenom" class="form-label">Prenom</label>
                 <input type="text" class="form-control" id="prenom" aria-describedby="prenom">
+                <input type="text" class="form-control" id="nom" aria-describedby="nom">
             </p>        
+            <p id="resultat"></p>
         </fieldset>
         <button type="submit" class="btn btn-success">Submit</button>
         </div>    
@@ -23,7 +25,8 @@
     <script>
         function sayHi(){
             let prenom = document.querySelector("#prenom").value;
-            alert(`Hi ${prenom}`)
+            let resultat = document.querySelector("#resultat");
+            resultat.innerHTML = `Hello ${prenom}`;
         }
     </script>
 </body>

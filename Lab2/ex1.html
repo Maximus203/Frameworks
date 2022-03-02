@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="taskList(); return false;">
+        <fieldset>
+            <legend>
+            Add New Task
+            </legend>
+            
+            <p>
+                <label for="task">Task</label>
+                <input type="text" id="task" placeholder="ToDo">
+            </p>
+            <p>
+                <input type="submit" value="AddNewTask">
+            </p>
+        </fieldset>
+    </form>
+    <ul></ul>
+    <script>
+        let mybody = document.body;
+        function taskList()
+        {
+            let task = document.querySelector("#task").value;
+            let mytask = document.createElement("li");
+            mytask.innerText = task;
+            mybody.appendChild(mytask);
+        }
+    </script>
+</body>
+</html>

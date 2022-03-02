@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mybody = document.body;
+        
+        let myh1 = document.createElement("h1");
+        let myul = document.createElement("ul");
+        let my1li = document.createElement("li");
+        let my2li = document.createElement("li");
+        let my3li = document.createElement("li");
+        
+        myh1.innerHTML = "DOM Content";
+        myh1.style.color="blue";
+        
+        myul.appendChild(my1li);
+        
+        my1li.innerHTML = "First";
+        my1li.style.color="red";
+        
+        my2li.innerHTML = "Second";
+        my2li.style.color="yellow";
+        
+        my3li.innerHTML = "Third";
+        my3li.style.color="green";
+        
+        myul.appendChild(my1li);
+        myul.appendChild(my2li);
+        myul.appendChild(my3li);
+        
+        
+        mybody.appendChild(myh1);
+        mybody.appendChild(myul);
+    </script>
+</body>
+</html>

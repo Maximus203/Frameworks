@@ -13,8 +13,11 @@
         <fieldset>
             <p>
                 <label for="prenom" class="form-label">Prenom</label>
-                <input type="text" class="form-control" id="prenom" aria-describedby="prenom">
-                <div id="emailHelp" class="form-text">On va vous dire bonjour n'ayez pas peur</div>
+                <input type="text" class="form-control" id="prenom" aria-describedby="prenom"><br>
+                <label for="prenom" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="nom" aria-describedby="nom"><br>
+                <label for="prenom" class="form-label">Date</label>
+                <input type="date" class="form-control" id="date" aria-describedby="date">
             </p>        
             <p id="resultat"></p>
         </fieldset>
@@ -26,8 +29,9 @@
         function sayHi(){
             let prenom = document.querySelector("#prenom").value;
             let nom = document.querySelector("#nom").value;
+            let date = document.querySelector("#date").value;
             let resultat = document.querySelector("#resultat");
-            resultat.innerHTML = `Hello ${prenom} ${nom} !`;
+            resultat.innerHTML = `Hello ${prenom} ${prenom} you was born on ${date} `;
         }
     </script>
 </body>
