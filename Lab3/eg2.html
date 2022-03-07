@@ -15,7 +15,7 @@
         let m = 58;
         let s = 35;
         function increment() {
-            document.querySelector("h1").innerHTML = `${h}h :${m}m :${s}s`;
+            document.querySelector("h1").innerHTML = `${h < 10 ? "0" + h : h}h :${m < 10 ? "0" + m : m}m :${s < 10 ? "0" + s : s}s`;
             if (s < 59)
             {
                 s++;
