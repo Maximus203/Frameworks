@@ -1,11 +1,11 @@
 const port = 3000;
-const http = require('http');
+const http = require("http");
 
 const app = http.createServer((req, res) => {
     console.log(`Received an incoming request from ${req.url}`);
-    res.writeHead(200, { "Content-Type": "text/hmtl" });
+    res.writeHead(200, { "Content-Type": "text/html" });
 
-    let resMessage = "<h1>Hello, ESTM!</h1>";
+    let resMessage = "<h1>Hello, World!</h1>";
     res.write(resMessage);
     res.end();
     console.log(`Sent a response: ${resMessage}`);
