@@ -1,7 +1,7 @@
 //const utils = require("./utils");
 
 //"use strict";
-const port = 3001,
+const port = 3000,
     http = require("http"),
     httpStatus = require("http-status-codes"),
     router = require("./router"),
@@ -33,6 +33,21 @@ router.get("/glob.css", (req, res) => {
 router.get("/bootstrap.css", (req, res) => {
     res.writeHead(httpStatus.StatusCodes.OK, contentTypes.css);
     utils.getFile("public/css/bootstrap.css", res);
+}
+);
+router.get("public/images/graph.png", (req, res) => {
+    res.writeHead(httpStatus.StatusCodes.OK, contentTypes.png);
+    utils.getFile("public/images/graph.png", res);
+}
+);
+router.get("public/images/product.jpg", (req, res) => {
+    res.writeHead(httpStatus.StatusCodes.OK, contentTypes.jpg);
+    utils.getFile("public/images/product.jpg", res);
+}
+);
+router.get("public/images/people.jpg", (req, res) => {
+    res.writeHead(httpStatus.StatusCodes.OK, contentTypes.jpg);
+    utils.getFile("public/images/people.jpg", res);
 }
 );
 http.createServer(router.handle).listen(port);
