@@ -14,7 +14,7 @@ module.exports = {
         "Content-Type": "image/jpg",
     },
     png: {
-        "Content-Type": "image/jpg",
+        "Content-Type": "image/png",
     },
     css: {
         "Content-Type": "text/css",
