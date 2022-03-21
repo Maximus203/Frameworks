@@ -1,7 +1,7 @@
 <div class="container">
-  <div class="col-sm-6"><img src="/product.jpg" alt="" /></div>
+  <div class="col-sm-6"><img src="/images/courses.jpg" alt="" /></div>
   <div class="col-sm-6">
-    <h1 class="title">Learn to cook cutting edge food</h1>
+    <h1 class="title">Learn to code with ES6</h1>
     <h3>Our Courses:</h3>
     <table class="table table-striped table-bordered">
       <thead>
@@ -11,16 +11,18 @@
         </tr>
       </thead>
       <tbody>
-        <%- offeredCourses.forEach(course=> { %>
+
+        <% offredCourses.forEach((course)=> { %>
           <tr>
             <td>
-              <%- course.title %>
+              <%= course.title %>
             </td>
             <td>
-              <%- couse.cost %>
+              <%= course.cost %>
             </td>
           </tr>
-          <%- }); %>
+          <% }); %>
+
       </tbody>
     </table>
     <a href="/contact">Contact Us</a> today!

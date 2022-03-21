@@ -1,4 +1,4 @@
-const courses = [
+const course = [
     {
         title: "Advanced JS",
         cost: 50,
@@ -16,19 +16,15 @@ const courses = [
         cost: 25,
     },
 ];
-
 exports.showHome = (req, res) => {
     res.render("index");
 };
 exports.showCourses = (req, res) => {
-    res.render("courses", { offredcourses: courses });
+    res.render("courses", { offredCourses: course });
 };
-exports.showCourses = (req, res) => {
+exports.showSignUp = (req, res) => {
     res.render("contact");
 };
-exports.showCourses = (req, res) => {
-    res.render("error");
-};
-exports.showCourses = (req, res) => {
+exports.postedSignUpForm = (req, res) => {
     res.render("thanks");
 };
