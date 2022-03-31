@@ -1,7 +1,1 @@
-Lab5/my_node_app/node_modules/
-Lab6/express-server-1/node_modules/
-Lab6/express-server-2/node_modules/
-node_modules/.package-lock.json
-node_modules/http-status-codes/
-Lab7/express-views/node_modules/
-ExprAppModule/node_modules/
+node_modules
