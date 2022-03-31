@@ -1,4 +1,4 @@
-#😊 Hello
+# Hello 😊 
 # Mongo DB
 #
 # Before using the app, you may create the database and these collections
